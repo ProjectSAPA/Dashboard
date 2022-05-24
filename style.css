@@ -163,7 +163,7 @@ input[type="search"].search-ctrl{
 }
 .dashboar-left-block{
     width: 100%;
-    padding-right: 38px;
+   padding-right: 38px;
 }
 .market-value-block{
     width: 100%;
@@ -175,13 +175,12 @@ input[type="search"].search-ctrl{
     padding: 0px 5px;
 }
 .market-value-box{
-    width: 100%;
+     width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #1d1d1d;
     padding: 6px 11px;
     border-radius: 6px;
-    margin-bottom: 10px;
 }
 .market-value-box p{
     margin: 0px;
@@ -230,7 +229,7 @@ input[type="search"].search-ctrl{
     background-color: #1d1d1d;
     padding: 32px 40px;
     border-radius: 20px;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 .wallet-block .row{
     margin: 0px -12px;
@@ -284,8 +283,9 @@ input[type="search"].search-ctrl{
 }
 .vault-block{
     width: 100%;
+    height: 400px;
     display: flex;
-    flex-wrap: wrap;
+    overflow-y: auto;
     margin-top: 15px;
     position: relative;
     margin-bottom: 50px;
@@ -294,28 +294,29 @@ input[type="search"].search-ctrl{
     width: 100%;
     position: relative;
 }
-/*.vault-block-main:after{
+.vault-block-main:after{
     position: absolute;
     content: '';
-    right: -9px;
+    right: -30px;
     top: 0;
     bottom: 0;
     background: rgb(15,16,15);
     background: linear-gradient(270deg, rgba(15,16,15,1) 20%, rgba(0,212,255,0) 100%);
     width: 70px;
-}*/
+}
 .vault-container{
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+   display: flex;
+   flex-wrap: wrap;
     margin-bottom: 30px;
 }
 .vault-box{
-    width: calc(25% - 15px);
+   width:401px;
     background-color: #1d1d1d;
     border-radius: 20px;
     margin-right: 15px;
     padding: 24px 0px 6px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 .vault-icon-title{
     width: 100%;
@@ -695,6 +696,7 @@ input[type="search"].search-ctrl{
 @media screen and (max-width: 1279px)
 {
     .vault-box{width: calc(33.3333% - 15px);}
+
 }
 @media screen and (max-width: 1199px)
 {
@@ -762,3 +764,7 @@ input[type="search"].search-ctrl{
     .user-img{width: 28px;height: 28px;}
     .bell-icon{margin-right: 18px;}
 }
+.Accept1{background-color: #1d1d1d; color: #8dc63f;}
+.Accept1:hover{background-color:#1d1d1d ;color: #8dc63f ;}
+.apy-vault{display: flex; flex-wrap: wrap; align-items: center;}
+.apy-vault-h2{font-size: 18px; padding:10px;}
